@@ -25,7 +25,7 @@ const Navibar = () => {
       <div className='w-full bg-white-1 headerSha'>
         <div className='w-full m-auto max-w-[1400px] h-[60px] md:h-[100px] px-4 md:px-8 flex justify-between items-center'>
           {/* logo -->  */}
-          <div className='w-[110px] md:w-[190px] h-[50px] md:h-[70px] relative'>
+          <div className='w-[110px] md:w-[170px] h-[50px] md:h-[70px] relative'>
             <Image src='/assets/logo.svg' alt='' fill className='object-fill' />
           </div>
           {/* right por ---->  */}
