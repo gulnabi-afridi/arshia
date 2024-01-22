@@ -1,5 +1,7 @@
 import React from 'react';
 import initTranslations from '@/app/i18n';
+import TranslationsProvider from './component/TranslationsProvider';
+import Header from './component/Header/Header';
 
 interface HomeProps {
   params: {
@@ -7,12 +9,21 @@ interface HomeProps {
   };
 }
 
+const i18nNamespaces = ['home'];
+
 export default async function Home({ params: { locale } }: HomeProps) {
-  const { t } = await initTranslations(locale, ['home']);
+  const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
-    <main>
-      <h1>{t('hero')}</h1>
-    </main>
+    <TranslationsProvider
+      namespaces={i18nNamespaces}
+      locale={locale}
+      resources={resources}
+    >
+      <main>
+        <h1>{t('hero')}</h1>
+        <Header />
+      </main>
+    </TranslationsProvider>
   );
 }
