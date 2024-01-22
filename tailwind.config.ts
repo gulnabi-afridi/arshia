@@ -18,6 +18,7 @@ const config: Config = {
         sm: '480px',
         md: '768px',
         lg: '976px',
+        clg: '1182px',
         xl: '1280px',
       },
       colors: {
@@ -31,6 +32,7 @@ const config: Config = {
         },
         white: {
           1: '#FFF',
+          2: '#DDD',
         },
       },
     },

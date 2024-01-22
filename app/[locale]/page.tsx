@@ -1,7 +1,8 @@
 import React from 'react';
 import initTranslations from '@/app/i18n';
 import TranslationsProvider from './component/TranslationsProvider';
-import Header from './component/Header/Header';
+import Hero from './component/LandingPage/Hero';
+import Navibar from './component/shared/Navibar/Navibar';
 
 interface HomeProps {
   params: {
@@ -9,7 +10,7 @@ interface HomeProps {
   };
 }
 
-const i18nNamespaces = ['home'];
+const i18nNamespaces = ['landingPage', 'common'];
 
 export default async function Home({ params: { locale } }: HomeProps) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
@@ -21,8 +22,8 @@ export default async function Home({ params: { locale } }: HomeProps) {
       resources={resources}
     >
       <main>
-        <h1>{t('hero')}</h1>
-        <Header />
+        <Navibar />
+        <Hero />
       </main>
     </TranslationsProvider>
   );
