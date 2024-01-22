@@ -1,1 +1,16 @@
-{"browse_users":"Browse users","docs":"Docs","f_about":"About itsolve","f_blog":"Blog","f_documentation":"Documentation","f_help":"help","f_home":"home","f_news_event":"News and events","f_rule":"Rule","how_search":"Find users by username, display name, or itsolve ID","login":"Login","read_docs":"Read docs","register":"Register","user":"other use itsolve"}
+{
+  "browse_users": "Browse users",
+  "docs": "Docs",
+  "f_about": "About itsolve",
+  "f_blog": "Blog",
+  "f_documentation": "Documentation",
+  "f_help": "help",
+  "f_home": "home",
+  "f_news_event": "News and events",
+  "f_rule": "Rule",
+  "how_search": "Find users by username, display name, or itsolve ID",
+  "login": "Login",
+  "read_docs": "Read docs",
+  "register": "Register",
+  "user": "other use itsolve"
+}

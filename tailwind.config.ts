@@ -33,6 +33,10 @@ const config: Config = {
         white: {
           1: '#FFF',
           2: '#DDD',
+          3: '#D9D9D9',
+        },
+        green: {
+          1: '#50C878',
         },
       },
     },
