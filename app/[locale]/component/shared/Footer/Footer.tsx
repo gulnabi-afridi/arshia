@@ -64,14 +64,14 @@ const Footer = () => {
   };
 
   return (
-    <div className='w-full'>
+    <div className='w-full py-10'>
       <div className='w-full m-auto max-w-[1400px] gap-4 sm:gap-6 px-4 md:px-8 flex flex-col justify-center items-center'>
         {/* logo --->  */}
         <div className='w-[110px] md:w-[170px] h-[50px] md:h-[70px] relative'>
           <Image src='/assets/logo.svg' alt='' fill className='object-fill' />
         </div>
         {/* links --->  */}
-        <div className='flex flex-wrap justify-center items-center gap-4 gap-y-1'>
+        <div className='flex flex-wrap justify-center items-center gap-x-6 gap-y-1'>
           {footerData.links.map((item, index) => {
             return (
               <Link
