@@ -278,3 +278,34 @@ export const arrow2: React.FC<Props> = ({
     />
   </svg>
 );
+
+export const downA: React.FC<Props> = ({
+  fill = 'none',
+  stroke = '',
+  className = 'w-[24px] h-[25px]',
+}: Props) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    className={className}
+    viewBox='0 0 24 25'
+    fill={fill}
+    stroke={stroke}
+  >
+    <g clip-path='url(#clip0_318_2678)'>
+      <path
+        d='M7.415 8.70996L12 13.295L16.585 8.70996L18 10.125L12 16.125L6 10.125L7.415 8.70996Z'
+        fill='white'
+      />
+    </g>
+    <defs>
+      <clipPath id='clip0_318_2678'>
+        <rect
+          width='24'
+          height='24'
+          fill='white'
+          transform='translate(0 0.5)'
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);
