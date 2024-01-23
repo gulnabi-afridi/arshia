@@ -31,10 +31,7 @@
   width: 50% !important;
 }
 .hideScroll::-webkit-scrollbar {
-  background-color: red !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  display: none !important;
 }
 
 .slick-slide {

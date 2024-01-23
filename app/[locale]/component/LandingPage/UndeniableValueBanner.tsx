@@ -77,11 +77,11 @@ const UndeniableValueBanner = () => {
               </div>
             </div>
             {/* right portion ----->  */}
-            <div className='w-full flex flex-col items-start sm:items-center lg:items-start gap-1 sm:gap-3 lg:gap-6 pl-0 lg:pl-[3rem]'>
+            <div className='w-full flex flex-col items-start sm:items-center lg:items-start gap-1 sm:gap-3 lg:gap-5 pl-0 lg:pl-[3rem]'>
               <p className='text-white-1 text-[18px] sm:text-[22px] font-semibold'>
                 Undeniable value
               </p>
-              <h2 className='text-[26px] sm:text-[32px] text-white-1 leading-[38px] sm:leading-[40px] lg:leading-[50px] font-extrabold'>
+              <h2 className='text-[26px] sm:text-[32px] lg:text-[48px] text-white-1 leading-[38px] sm:leading-[40px] lg:leading-[60px] font-extrabold'>
                 All this and more, for free
               </h2>
               {/* list --->  */}

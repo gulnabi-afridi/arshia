@@ -80,7 +80,7 @@ const Navibar = () => {
           <div className='w-full flex justify-end items-center'>
             <RxCross1
               onClick={toggleDrawer}
-              className='text-[35px] text-white-main '
+              className='text-[30px] sm:text-[35px] text-white-main '
             />
           </div>
           {/* logo -->  */}
@@ -90,13 +90,13 @@ const Navibar = () => {
           {/* links  */}
           <div className='flex w-full justify-center items-center flex-col gap-6 mt-6'>
             {/* search */}
-            <div className='w-full hideScroll px-2 max-w-[350px] whitespace-nowrap overflow-auto text-[14px] text-black-3 font-medium py-[10px] border-[1px] border-white-2 rounded-lg'>
+            <div className='w-full h-[50px] pb-0 text-center hideScroll flex items-center px-2 max-w-[350px] whitespace-nowrap overflow-auto text-[14px] text-black-3 font-medium border-[1px] border-white-2 rounded-lg'>
               {t('common:how_search')}
             </div>
             {/* docs --->  */}
             <Link
               href='#'
-              className='text-black-3 text-[16px] font-semibold relative after:absolute after:w-0 after:bottom-0 after:left-0 after:h-[2px] after:bg-purple-1 hover:after:w-full after:duration-200'
+              className='text-black-3 text-[18px] font-semibold relative after:absolute after:w-0 after:bottom-0 after:left-0 after:h-[2px] after:bg-purple-1 hover:after:w-full after:duration-200'
             >
               {' '}
               {t('common:docs')}
@@ -104,7 +104,7 @@ const Navibar = () => {
             {/* Browse users --> */}
             <Link
               href='#'
-              className='text-black-3 text-[16px] font-semibold relative after:absolute after:w-0 after:bottom-0 after:left-0 after:h-[2px] after:bg-purple-1 hover:after:w-full after:duration-200'
+              className='text-black-3 text-[18px] font-semibold relative after:absolute after:w-0 after:bottom-0 after:left-0 after:h-[2px] after:bg-purple-1 hover:after:w-full after:duration-200'
             >
               {' '}
               {t('common:browse_users')}
