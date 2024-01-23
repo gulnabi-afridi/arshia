@@ -1,7 +1,5 @@
 import React from 'react';
 import Wrapper from '../shared/ComponentWrapper/Wrapper';
-import Image from 'next/image';
-import * as Icons from '../../../../svg/Icons';
 import FeedbackCard from './Cards/FeedbackCard';
 
 const Feedback = () => {
