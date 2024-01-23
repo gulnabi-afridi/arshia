@@ -467,3 +467,22 @@ export const check: React.FC<Props> = ({
     />
   </svg>
 );
+
+export const sampleCheck: React.FC<Props> = ({
+  fill = 'none',
+  stroke = '',
+  className = 'w-[25px] h-[24px]',
+}: Props) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    className={className}
+    viewBox='0 0 25 24'
+    fill={fill}
+    stroke={stroke}
+  >
+    <path
+      d='M11.0738 15.4548C10.9613 15.5673 10.802 15.661 10.6613 15.661C10.5207 15.661 10.3613 15.5626 10.2441 15.4501L7.61914 12.8251L8.45352 11.9907L10.666 14.2032L16.516 8.31104L17.3363 9.15947L11.0738 15.4548Z'
+      fill='white'
+    />
+  </svg>
+);
