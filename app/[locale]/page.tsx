@@ -8,6 +8,7 @@ import Feedback from './component/LandingPage/Feedback';
 import Reputation from './component/LandingPage/Reputation';
 import EntireReputationInOnePlace from './component/LandingPage/EntireReputationInOnePlace';
 import WhyItSolve from './component/LandingPage/WhyItSolve';
+import PioneeringPlatform from './component/LandingPage/PioneeringPlatform';
 
 interface HomeProps {
   params: {
@@ -33,6 +34,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
         <Reputation />
         <EntireReputationInOnePlace />
         <WhyItSolve />
+        <PioneeringPlatform />
         <Footer />
       </main>
     </TranslationsProvider>
