@@ -18,7 +18,7 @@ const FeedbackCard = () => {
             </p>
             <div className='flex justify-center items-center gap-1'>
               {[0, 1, 2, 3, 4].map((item, index) => {
-                return <Icons.star className='w-[12px] h-[12px]' />;
+                return <Icons.star key={index} className='w-[12px] h-[12px]' />;
               })}
             </div>
           </div>

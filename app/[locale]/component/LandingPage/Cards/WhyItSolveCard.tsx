@@ -14,7 +14,7 @@ const WhyItSolveCard = () => {
         </h4>
         <p className='text-[16px] font-medium text-black-3'>
           Effortlessly bring in reviews from other platforms directly into your
-          itsolve review collection with Itsolve's easy import feature.
+          itsolve review collection with Itsolve&apos;s easy import feature.
         </p>
         <button className='text-[16px] text-purple-1 font-semibold underline hover:opacity-80'>
           Learn More

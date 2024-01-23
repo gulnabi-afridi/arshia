@@ -11,7 +11,7 @@ const PioneeringPlatform = () => {
           {/* text ---->  */}
           <div className='flex flex-col justify-center items-start md:items-center gap-0'>
             <p className='text-purple-1 text-[18px] sm:text-[22px] font-semibold'>
-              The world's pioneering platform
+              The world&apos;s pioneering platform
             </p>
             <h2 className='text-[26px] sm:text-[32px] text-black-1 leading-[38px] sm:leading-[40px] lg:leading-[50px] font-extrabold'>
               The only review platform for freelancers
