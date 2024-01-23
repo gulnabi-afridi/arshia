@@ -10,6 +10,7 @@ import EntireReputationInOnePlace from './component/LandingPage/EntireReputation
 import WhyItSolve from './component/LandingPage/WhyItSolve';
 import PioneeringPlatform from './component/LandingPage/PioneeringPlatform';
 import UndeniableValueBanner from './component/LandingPage/UndeniableValueBanner';
+import SolveApi from './component/LandingPage/SolveApi';
 
 interface HomeProps {
   params: {
@@ -37,6 +38,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
         <WhyItSolve />
         <PioneeringPlatform />
         <UndeniableValueBanner />
+        <SolveApi />
         <Footer />
       </main>
     </TranslationsProvider>
