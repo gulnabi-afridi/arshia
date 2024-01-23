@@ -7,6 +7,7 @@ import Footer from './component/shared/Footer/Footer';
 import Feedback from './component/LandingPage/Feedback';
 import Reputation from './component/LandingPage/Reputation';
 import EntireReputationInOnePlace from './component/LandingPage/EntireReputationInOnePlace';
+import WhyItSolve from './component/LandingPage/WhyItSolve';
 
 interface HomeProps {
   params: {
@@ -31,6 +32,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
         <Feedback />
         <Reputation />
         <EntireReputationInOnePlace />
+        <WhyItSolve />
         <Footer />
       </main>
     </TranslationsProvider>

@@ -12,13 +12,44 @@
 .feedbackSha {
   box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
 }
+
+/* react slick styles ---->  */
+
+.slick-dots li button:before {
+  font-size: 10px !important;
+  color: white !important;
+}
+
+.slick-dots li {
+  margin: 0px !important;
+}
+.slick-dots {
+  bottom: -40px !important;
+}
 /* =======> drawer style */
 .drawer {
   width: 50% !important;
 }
 .hideScroll::-webkit-scrollbar {
-  display: none;
+  background-color: red !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
+
+.slick-slide {
+  margin: auto !important;
+}
+
+@media screen and (max-width: 500px) {
+  .slick-dots li button:before {
+    font-size: 8px !important;
+  }
+  .slick-dots {
+    bottom: -36px !important;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .drawer {
     width: 70% !important;
