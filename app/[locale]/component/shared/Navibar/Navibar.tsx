@@ -23,7 +23,7 @@ const Navibar = () => {
   return (
     <React.Fragment>
       <div className='w-full z-30 bg-white-1 headerSha'>
-        <div className='w-full m-auto max-w-[1400px] h-[60px] md:h-[100px] px-4 md:px-8 flex justify-between items-center'>
+        <div className='w-full m-auto max-w-[1400px] h-[60px] md:h-[100px] px-4 md:px-8 gap-4 flex justify-between items-center'>
           {/* logo -->  */}
           <div className='w-[110px] md:w-[170px] h-[50px] md:h-[70px] relative'>
             <Image src='/assets/logo.svg' alt='' fill className='object-fill' />
@@ -52,7 +52,7 @@ const Navibar = () => {
             </Link>
             <div className='flex justify-center items-center gap-3'>
               <FillButton
-                styles='bg-purple-1/20 text-purple-1'
+                styles='bg-purple-1/20 whitespace-nowrap text-purple-1'
                 text={t('common:login')}
               ></FillButton>
               <IconButton
