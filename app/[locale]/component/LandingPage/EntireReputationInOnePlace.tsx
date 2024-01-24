@@ -67,7 +67,7 @@ const EntireReputationInOnePlace = () => {
             </div>
           </div>
           {/* dashoard image ----->  */}
-          <div className='w-full h-[300px] sm:h-[300px] csm:h-[400px] md:h-[500px] cmd:h-[600px] lg:h-[770px] clg:h-[870px] xl:mt-0 clg-mt-10 lg:-mt-16 mt-0 relative'>
+          <div className='w-full h-[300px] sm:h-[300px] csm:h-[400px] md:h-[500px] cmd:h-[600px] lg:h-[770px] clg:h-[870px] xl:mt-0 clg-mt-10 lg:-mt-16 mt-0 relative sm:mt-0 mt-4'>
             <Image
               src='/assets/dashboard.svg'
               fill

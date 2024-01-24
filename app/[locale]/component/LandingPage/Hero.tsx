@@ -23,7 +23,7 @@ const Hero = () => {
                 {t('h_des')}
               </p>
               {/* search input ----->  */}
-              <div className='w-full py-[8px] rounded-lg bg-white-1 grid grid-cols-[1fr,auto] justify-center items-center px-4'>
+              <div className='w-full py-[8px] rounded-lg bg-white-1 grid grid-cols-[1fr,auto] justify-center items-center px-3 sm:px-4'>
                 {/* input --->  */}
                 <input
                   type='text'

@@ -20,7 +20,7 @@ const Reputation = () => {
       content: t('r_c1_content'),
     },
     {
-      icon: '/assets/rating.svg',
+      icon: '/assets/review.svg',
       title: t('r_c2_title'),
       arrow: (
         <Icons.arrow2 className='w-[220px] sm:w-[290px] h-[45px] sm:h-[56px]' />
@@ -28,7 +28,7 @@ const Reputation = () => {
       content: t('r_c2_content'),
     },
     {
-      icon: '/assets/rating.svg',
+      icon: '/assets/approved.svg',
       title: t('r_c3_title'),
       content: t('r_c3_content'),
     },
