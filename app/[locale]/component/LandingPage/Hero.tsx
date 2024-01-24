@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="w-full xl:py-0 py-10 min-h-[calc(100vh-100px)] xl:h-[calc(100vh-100px)] bg-[url('/assets/heroBg.svg')] bg-cover bg-center overflow-x-hidden">
+    <div className="w-full xl:py-0 py-10 min-h-[calc(100vh-60px)] md:min-h-[calc(100vh-100px)] xl:h-[calc(100vh-100px)] x;:min-h-auto bg-[url('/assets/heroBg.svg')] bg-cover bg-center overflow-x-hidden">
       <Wrapper style='h-full'>
         <div className='w-full h-full grid gap-2 sm:gap-12 grid-cols-1 md:grid-cols-[1.1fr,1fr] justify-center items-center'>
           {/* left portion ---->  */}
@@ -27,7 +27,7 @@ const Hero = () => {
                 {/* input --->  */}
                 <input
                   type='text'
-                  className='w-full h-full text-black-3 focus:outline-0 text-[14px] xl:text-[16px] font-medium pr-2 xl:font-semibold rounded-lg'
+                  className='w-full text-black-3 focus:outline-0 text-[14px] xl:text-[16px] font-medium pr-2 xl:font-semibold rounded-lg'
                   placeholder='Find users by username, display name, or itsolve ID'
                 />
                 {/* button --->  */}
