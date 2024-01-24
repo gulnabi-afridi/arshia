@@ -4,8 +4,11 @@ import React from 'react';
 import Wrapper from '../shared/ComponentWrapper/Wrapper';
 import * as Icons from '../../../../svg/Icons';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="w-full xl:py-0 py-10 min-h-[calc(100vh-60px)] md:min-h-[calc(100vh-100px)] xl:h-[calc(100vh-100px)] x;:min-h-auto bg-[url('/assets/heroBg.svg')] bg-cover bg-center overflow-x-hidden">
       <Wrapper style='h-full'>
@@ -14,13 +17,10 @@ const Hero = () => {
           <div className='w-full flex justify-center items-center'>
             <div className='w-full  xl:max-w-full max-w-[500px] flex flex-col items-start gap-5 lg:gap-6'>
               <h1 className='text-[40px] lg:text-[50px] xl:text-[60px] font-extrabold leading-[50px] lg:leading-[60px] xl:leading-[80px]'>
-                All your reputation in one place
+                {t('h_title')}
               </h1>
               <p className='text-[16px] lg:text-[18px] font-medium text-black-3 leading-[28px]'>
-                Wave goodbye to having all of your reputation split across 7
-                different websites. Centralize all your reviews on one
-                streamlined platform, allowing you to showcase them
-                collectively. Tailored for freelancers like yourself.
+                {t('h_des')}
               </p>
               {/* search input ----->  */}
               <div className='w-full py-[8px] rounded-lg bg-white-1 grid grid-cols-[1fr,auto] justify-center items-center px-4'>
@@ -28,13 +28,13 @@ const Hero = () => {
                 <input
                   type='text'
                   className='w-full text-black-3 focus:outline-0 text-[14px] xl:text-[16px] font-medium pr-2 xl:font-semibold rounded-lg'
-                  placeholder='Find users by username, display name, or itsolve ID'
+                  placeholder={t('common:how_search')}
                 />
                 {/* button --->  */}
                 <button className='flex px-[14px] hover:opacity-80 rounded-md py-2 justify-center items-center gap-2 bg-purple-1'>
                   <Icons.search className='w-[20px] xl:w-[24px] h-[20px] xl:h-[24px]' />
                   <p className='text-[16px] xl:text-[18px] font-medium text-white-1'>
-                    Search
+                    {t('common:search')}
                   </p>
                 </button>
               </div>
@@ -57,14 +57,14 @@ const Hero = () => {
                 {/*  */}
                 <p className='text-[18px] font-normal text-black-3 -ml-6 lg:-ml-3'>
                   <span className='font-semibold'> +1200 </span>{' '}
-                  <span className='font-semibold'> other </span> use itsolve
+                  {t('common:user')}
                 </p>
               </div>
               {/* read docs --->  */}
               <button className='flex hover:opacity-80 justify-center items-center gap-2 md:gap-3'>
                 <Icons.docs className='w-[22px] md:w-[24px] h-[22px] md:h-[24px]' />
                 <p className='text-[16px] md:text-[18px] font-semibold text-black-3'>
-                  Read docs
+                  {t('common:read_docs')}
                 </p>
               </button>
             </div>
@@ -84,7 +84,7 @@ const Hero = () => {
               <div className='w-fit absolute top-0 sm:left-0 left-auto sm:right-auto right-0 px-[8px] sm:px-[18px] lg:px-[24px] py-[10px] sm:py-[16px] rounded-lg widgetShadow flex bg-white-1 justify-center items-center gap-3 lg:gap-1'>
                 <div className='flex flex-col'>
                   <p className='text-[14px] lg:text-[16px] font-medium text-black-3'>
-                    Total value traded
+                    {t('h_value_traded')}
                   </p>
                   <p className='text-[16px] lg:text-[18px] text-black-1 font-bold'>
                     $438.72
@@ -98,10 +98,10 @@ const Hero = () => {
               <div className='w-fit absolute bottom-24 sm:bottom-28 left-0 sm:-left-3 px-[8px] sm:px-[18px] lg:px-[24px] py-[10px] sm:py-[16px] rounded-lg widgetShadow flex bg-white-1 justify-center items-center gap-2'>
                 <div className='flex flex-col'>
                   <p className='text-[14px] lg:text-[16px] font-medium text-black-3'>
-                    Popular Product
+                    {t('h_popular_category')}
                   </p>
                   <p className='textr-[16px] lg:text-[18px] text-black-1 font-bold'>
-                    Web Design
+                    {t('h_web_design')}
                   </p>
                 </div>
                 <Icons.share className='w-[24px] h-[24px]' />

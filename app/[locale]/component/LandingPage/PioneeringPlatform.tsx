@@ -1,9 +1,48 @@
+'use client';
+
 import React from 'react';
 import Wrapper from '../shared/ComponentWrapper/Wrapper';
 import * as Icons from '../../../../svg/Icons';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const PioneeringPlatform = () => {
+  const { t } = useTranslation();
+
+  // data ------>
+  const cardData = [
+    {
+      img: '/assets/trustPiolt.svg',
+      list: [
+        t('p_c1_l1'),
+        t('p_c1_l2'),
+        t('p_c1_l3'),
+        t('p_c1_l4'),
+        t('p_c1_l5'),
+        t('p_c1_l6'),
+        t('p_c1_l7'),
+        t('p_c1_l8'),
+        t('p_c1_l9'),
+        t('p_c1_l10'),
+      ],
+    },
+    {
+      img: '/assets/logo.svg',
+      list: [
+        t('p_c1_l1'),
+        t('p_c1_l2'),
+        t('p_c1_l3'),
+        t('p_c1_l4'),
+        t('p_c1_l5'),
+        t('p_c1_l6'),
+        t('p_c1_l7'),
+        t('p_c1_l8'),
+        t('p_c1_l9'),
+        t('p_c1_l10'),
+      ],
+    },
+  ];
+
   return (
     <div className='w-full bg-[#f6f6ff] py-10 csm:py-16'>
       <Wrapper>
@@ -11,16 +50,16 @@ const PioneeringPlatform = () => {
           {/* text ---->  */}
           <div className='flex flex-col justify-center items-start md:items-center gap-0'>
             <p className='text-purple-1 text-[18px] sm:text-[22px] font-semibold'>
-              The world&apos;s pioneering platform
+              {t('p_title')}
             </p>
             <h2 className='text-[26px] sm:text-[32px] text-black-1 leading-[38px] sm:leading-[40px] lg:leading-[50px] font-extrabold'>
-              The only review platform for freelancers
+              {t('p_sub_title')}
             </h2>
           </div>
           {/* cards ------>  */}
           <div className='w-full flex justify-center items-center'>
             <div className='w-full max-w-[960px] grid gap-4 lg:gap-7 grid-cols-1 md:grid-cols-2 '>
-              {data.map((item, pIndex) => {
+              {cardData.map((item, pIndex) => {
                 return (
                   <div
                     key={pIndex}
@@ -71,38 +110,5 @@ const PioneeringPlatform = () => {
     </div>
   );
 };
-
-const data = [
-  {
-    img: '/assets/trustPiolt.svg',
-    list: [
-      'Free public API',
-      'Free review listener and user lookup',
-      'Import existing reviews',
-      'User attributes',
-      'Verification',
-      'More free dynamic widgets',
-      'Advanced user browsing',
-      'Made for freelancers like you',
-      'User leaderboard for reviews',
-      'Custom solutions for agencies and teams',
-    ],
-  },
-  {
-    img: '/assets/logo.svg',
-    list: [
-      'Free public API',
-      'Free review listener and user lookup',
-      'Import existing reviews',
-      'User attributes',
-      'Verification',
-      'More free dynamic widgets',
-      'Advanced user browsing',
-      'Made for freelancers like you',
-      'User leaderboard for reviews',
-      'Custom solutions for agencies and teams',
-    ],
-  },
-];
 
 export default PioneeringPlatform;

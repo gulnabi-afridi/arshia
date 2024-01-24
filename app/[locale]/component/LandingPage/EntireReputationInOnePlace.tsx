@@ -5,8 +5,11 @@ import Wrapper from '../shared/ComponentWrapper/Wrapper';
 import IconButton from '../shared/Buttons/IconButton';
 import * as Icons from '../../../../svg/Icons';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const EntireReputationInOnePlace = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='w-full bg-[#f6f6ff] py-10 csm:py-16'>
       <Wrapper>
@@ -15,19 +18,17 @@ const EntireReputationInOnePlace = () => {
           <div className='w-full flex flex-col cmd:gap-0 gap-5 cmd:flex-row justify-between items-start'>
             <div className='flex flex-col gap-2 lg:gap-0'>
               <p className='text-purple-1 text-[18px] sm:text-[22px] font-semibold'>
-                Grow with ease
+                {t('g_title')}
               </p>
               <h2 className='text-[26px] sm:text-[32px] text-black-1 leading-[38px] sm:leading-[40px] lg:leading-[50px] font-extrabold'>
-                Your entire reputation, on one dashboard
+                {t('g_sub_title')}
               </h2>
               <p className='text-[18px] max-w-[700px] font-medium text-black-3'>
-                Explore insightful analytics like top-performing products,
-                overall trade value, review growth trends, import reviews,
-                review management, and additional features.
+                {t('g_content')}
               </p>
               <div className='flex justify-start items-center mt-2 sm:mt-0 lg:mt-4 gap-3'>
                 <IconButton
-                  text='Start Now!'
+                  text={t('common:start_now')}
                   styles='bg-purple-1 w-fit text-white-1'
                   isRight={true}
                   icon={<Icons.downA className='w-[24px] h-[24px]' />}
@@ -36,7 +37,7 @@ const EntireReputationInOnePlace = () => {
                 <button className='flex hover:opacity-80 justify-center items-center gap-2 md:gap-3'>
                   <Icons.docs className='w-[22px] md:w-[24px] h-[22px] md:h-[24px]' />
                   <p className='text-[16px] md:text-[18px] font-semibold text-black-3'>
-                    Read docs
+                    {t('common:read_docs')}
                   </p>
                 </button>
               </div>
@@ -61,7 +62,7 @@ const EntireReputationInOnePlace = () => {
               {/*  */}
               <p className='text-[18px] font-normal text-black-3 -ml-6 lg:-ml-3'>
                 <span className='font-semibold'> +1200 </span>{' '}
-                <span className='font-semibold'> other </span> use itsolve
+                {t('common:user')}
               </p>
             </div>
           </div>
@@ -70,7 +71,7 @@ const EntireReputationInOnePlace = () => {
             <Image
               src='/assets/dashboard.svg'
               fill
-              className='object-fill xl:object-cover rounded-md'
+              className='object-cover xl:object-cover rounded-md'
               alt=''
             />
           </div>

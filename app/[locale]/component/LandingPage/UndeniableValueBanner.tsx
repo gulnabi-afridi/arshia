@@ -1,10 +1,15 @@
+'use client';
+
 import React from 'react';
 import Wrapper from '../shared/ComponentWrapper/Wrapper';
 import Image from 'next/image';
 import * as Icons from '../../../../svg/Icons';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 const UndeniableValueBanner = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='w-full bg-purple-1 py-12 sm:py-24'>
       <Wrapper>
@@ -36,7 +41,7 @@ const UndeniableValueBanner = () => {
                     Michael
                   </p>
                   <p className='text-[10px] sm:text-[14px] lg:text-[16px] font-medium text-black-3'>
-                    Freelance Artist
+                    {t('common:freelancer_artist')}
                   </p>
                 </div>
               </div>
@@ -44,7 +49,7 @@ const UndeniableValueBanner = () => {
               <div className='w-fit absolute bottom-10 left-0 sm:-left-3 px-[8px] sm:px-[18px] lg:px-[24px] py-[10px] sm:py-[16px] rounded-lg widgetShadow flex bg-white-1 justify-center items-center gap-2'>
                 <div className='flex flex-col'>
                   <p className='text-[10px] sm:text-[14px] lg:text-[16px] font-medium text-black-3'>
-                    Popular Product
+                    {t('common:popular_platform')}
                   </p>
                   <p className='text-[12px] sm:text-[16px] lg:text-[18px] text-black-1 font-bold'>
                     Web Design
@@ -79,50 +84,50 @@ const UndeniableValueBanner = () => {
             {/* right portion ----->  */}
             <div className='w-full flex flex-col items-start sm:items-center lg:items-start gap-1 sm:gap-3 lg:gap-5 pl-0 lg:pl-[3rem]'>
               <p className='text-white-1 text-[18px] sm:text-[22px] font-semibold'>
-                Undeniable value
+                {t('u_title')}
               </p>
               <h2 className='text-[26px] sm:text-[32px] lg:text-[48px] text-white-1 leading-[38px] sm:leading-[40px] lg:leading-[60px] font-extrabold'>
-                All this and more, for free
+                {t('u_sub_title')}
               </h2>
               {/* list --->  */}
               <div className='flex flex-col items-start gap-2 sm:gap-4 lg:mt-0 mt-3'>
                 <div className='flex justify-center items-center gap-1'>
                   <Icons.sampleCheck className='w-[24px] h-[24px]' />
                   <p className='text-[#E9E9E9] text-[14px] sm:text-[18px] font-normal sm:font-medium'>
-                    Be apart of our{' '}
+                    {t('u_l1')}{' '}
                     <Link href='#' className='underline hover:opacity-80'>
-                      community of freelancers
+                      {t('u_l1_link')}
                     </Link>
                   </p>
                 </div>
                 <div className='flex justify-center items-center gap-1'>
                   <Icons.sampleCheck className='w-[24px] h-[24px]' />
                   <p className='text-[#E9E9E9] text-[14px]  sm:text-[18px] font-normal sm:font-medium'>
-                    Up your revenue by{' '}
+                    {t('u_l2')}{' '}
                     <Link href='#' className='underline hover:opacity-80'>
-                      increasing trust
+                      {t('u_l2_link')}
                     </Link>
                   </p>
                 </div>
                 <div className='flex justify-center items-center gap-1'>
                   <Icons.sampleCheck className='w-[24px] h-[24px]' />
                   <p className='text-[#E9E9E9] text-[14px] sm:text-[18px] font-normal sm:font-medium'>
-                    Share your full online reputation{' '}
+                    {t('u_l3')}{' '}
                     <Link href='#' className='underline hover:opacity-80'>
-                      in one go
+                      {t('u_l3_link')}
                     </Link>
                   </p>
                 </div>
                 <div className='flex justify-center items-center gap-1'>
                   <Icons.sampleCheck className='w-[24px] h-[24px]' />
                   <p className='text-[#E9E9E9] text-[14px] sm:text-[18px] font-normal sm:font-medium'>
-                    Quit paying hundreds for standard features
+                    {t('u_l4')}
                   </p>
                 </div>
                 <div className='flex justify-center items-center gap-1'>
                   <Icons.sampleCheck className='w-[24px] h-[24px]' />
                   <p className='text-[#E9E9E9] text-[14px] sm:text-[18px] font-med'>
-                    Get hired quicker simply by getting good reviews (bonus!)
+                    {t('u_l5')}
                   </p>
                 </div>
               </div>

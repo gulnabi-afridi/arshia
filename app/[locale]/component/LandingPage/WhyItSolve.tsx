@@ -5,16 +5,18 @@ import Wrapper from '../shared/ComponentWrapper/Wrapper';
 import * as Icons from '../../../../svg/Icons';
 import WhyItSolveCard from './Cards/WhyItSolveCard';
 import Slider from 'react-slick';
+import { useTranslation } from 'react-i18next';
 
 const WhyItSolve = () => {
   const [navigateSlideItem, setNavigateSlideItem] = useState(true);
+  const { t } = useTranslation();
 
   const settings = {
     dots: true,
     infinite: true,
     autoplay: false,
     autoplaySpeed: 3000,
-    speed: 1000,
+    speed: 800,
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: <CustomPrevArrow />,
@@ -43,6 +45,44 @@ const WhyItSolve = () => {
       },
     ],
   };
+
+  const sliderData = [
+    {
+      title: t('w_c1_title'),
+      des: t('w_c1_content'),
+      icon: '/assets/import.svg',
+    },
+    {
+      title: t('w_c2_title'),
+      des: t('w_c2_content'),
+      icon: '/assets/analytics.svg',
+    },
+    {
+      title: t('w_c3_title'),
+      des: t('w_c3_content'),
+      icon: '/assets/share.svg',
+    },
+    {
+      title: t('w_c4_title'),
+      des: t('w_c4_content'),
+      icon: '/assets/people.svg',
+    },
+    {
+      title: t('w_c2_title'),
+      des: t('w_c2_content'),
+      icon: '/assets/share.svg',
+    },
+    {
+      title: t('w_c3_title'),
+      des: t('w_c3_content'),
+      icon: '/assets/analytics.svg',
+    },
+    {
+      title: t('w_c4_title'),
+      des: t('w_c4_content'),
+      icon: '/assets/import.svg',
+    },
+  ];
 
   // custom arrow for slider
 
@@ -85,21 +125,28 @@ const WhyItSolve = () => {
             {/* left por --->  */}
             <div className='flex flex-col gap-0'>
               <p className='text-white-1 text-[18px] sm:text-[22px] font-semibold'>
-                Used by thousands
+                {t('w_title')}
               </p>
               <h2 className='text-[26px] sm:w-auto w-[250px] sm:text-[32px] text-white-1 leading-[38px] sm:leading-[40px] lg:leading-[50px] font-extrabold'>
-                Why freelancers love itsolve
+                {t('w_subTitle')}
               </h2>
               <p className='text-[18px] font-medium text-[#C3C3C3]'>
-                We make it easy for you.
+                {t('w_des')}
               </p>
             </div>
           </div>
           {/* slider ----->  */}
           <div className='w-full relative'>
             <Slider {...settings}>
-              {[0, 1, 2, 3, 4, 5].map((item: any, index: number) => {
-                return <WhyItSolveCard key={index} />;
+              {sliderData.map((item: any, index: number) => {
+                return (
+                  <WhyItSolveCard
+                    title={item.title}
+                    des={item.des}
+                    key={index}
+                    img={item.icon}
+                  />
+                );
               })}
             </Slider>
           </div>
