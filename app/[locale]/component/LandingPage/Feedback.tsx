@@ -50,6 +50,7 @@ const Feedback = () => {
               {feedBackCardData.map((item, index) => {
                 return (
                   <FeedbackCard
+                    key={index}
                     title={item.title}
                     date={item.title}
                     content={item.content}
