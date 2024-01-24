@@ -131,7 +131,7 @@ const Navibar = () => {
           {/* links  */}
           <div className='flex w-full justify-center items-center flex-col gap-6 mt-6'>
             {/* search */}
-            <div className='w-full h-[50px] pb-0 text-center hideScroll flex items-center px-2 max-w-[380px] whitespace-nowrap overflow-auto text-[12px] sm:text-[14px] text-black-3 font-medium border-[1px] border-white-2 rounded-lg'>
+            <div className='w-full h-[50px] pb-0 text-center hideScroll flex items-center px-2 xl:max-w-[400px] whitespace-nowrap overflow-auto text-[12px] sm:text-[14px] text-black-3 font-medium border-[1px] border-white-2 rounded-lg'>
               {t('common:how_search')}
             </div>
             {/* change language ------->  */}
@@ -148,7 +148,7 @@ const Navibar = () => {
                 <FaEarthAmericas className='text-[30px] text-purple-1 ' />
               </button>
               {smallScreenMenu && (
-                <div className='min-w-[160px] bg-white-1 flex flex-col px-2 py-2 rounded-lg shadow-xl absolute top-12 -left-[55px]'>
+                <div className='min-w-[160px] bg-white-1 flex flex-col px-2 py-2 rounded-lg shadow-xl absolute top-8 -left-[60px]'>
                   {languagesSupport.map((item, index) => {
                     return (
                       <button
