@@ -12,7 +12,7 @@ const SolveApi = () => {
   return (
     <div className='w-full bg-[#f6f6ff] py-10 csm:py-16'>
       <Wrapper>
-        <div className='flex-col w-full grid gap-5 gap-y-10 grid-cols-1 md:grid-cols-[2fr,1fr]'>
+        <div className='flex-col w-full grid gap-5 gap-y-10 grid-cols-1 justify-center items-center md:grid-cols-[2fr,1fr]'>
           {/* left portion ---->  */}
           <div className='w-full flex flex-col gap-3 md:gap-4'>
             <p className='text-purple-1 text-[18px] sm:text-[22px] font-semibold'>
