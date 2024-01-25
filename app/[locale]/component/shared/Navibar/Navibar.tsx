@@ -28,7 +28,7 @@ const Navibar = () => {
   return (
     <React.Fragment>
       <div className='w-full bg-white-1 headerSha'>
-        <div className='w-full z-0 m-auto max-w-[1400px] py-1 h-[54px] md:h-[70px] clg:h-[94px] px-4 md:px-8 gap-4 flex justify-between items-center'>
+        <div className='w-full z-0 m-auto max-w-[1400px] py-1 h-[54px] md:h-[70px] clg:h-[90px] px-4 md:px-8 gap-4 flex justify-between items-center'>
           {/* logo -->  */}
           <div className='w-[110px] md:w-[140px] md:h-[60px] clg:w-[170px] h-[50px] clg:h-[70px] relative'>
             <Image src='/assets/logo.svg' alt='' fill className='object-fill' />
@@ -36,7 +36,7 @@ const Navibar = () => {
           {/* right por ---->  */}
           <div className='hidden clg:flex justify-center items-center gap-4 xl:gap-8'>
             {/* search bar ------> */}
-            <div className='w-fit pl-4 xl:pl-8 pr-4 xl:pr-14 text-[12px] xl:text-[14px] 1xl:text-[16px] text-black-3 font-semibold py-[16px] border-[1px] border-white-2 rounded-lg'>
+            <div className='w-fit pl-4 xl:pl-8 pr-4 xl:pr-14 text-[12px] xl:text-[14px] 1xl:text-[16px] text-black-3 font-semibold py-[14px] border-[1px] border-white-2 rounded-lg'>
               {t('common:how_search')}
             </div>
             {/* docs --->  */}
