@@ -23,6 +23,7 @@ const i18nNamespaces = ['landingPage', 'common'];
 export default async function Home({ params: { locale } }: HomeProps) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
+
   return (
     <TranslationsProvider
       namespaces={i18nNamespaces}
